@@ -1,7 +1,7 @@
 Set-Location "C:\Users\sorokasergey\Documents\МинГаз"
 $hash = @{}
 [string[]]$array = @(Get-Content -Path .\Core-3650.txt )
-$ar1 = $array.GetEnumerator() | ? {$_ -match "ip route "}
+$ar1 = $array.GetEnumerator() | Where-Object {$_ -match "ip route "}
 for ($i = 0; $i -lt $ar1.Count; $i++) {
     
     [string[]]$str = $ar1[$i] -split " "
