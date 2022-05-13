@@ -17,4 +17,4 @@ for ($i = 0; $i -lt $ar1.Count; $i++) {
     
 }
 #$hash.GetEnumerator() | ? {$_.Value -match "0.0.0.0 0.0.0.0"}
-#$hash["172.16.192.209"]
+# #$hash["172.16.192.209"]
