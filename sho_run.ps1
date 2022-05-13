@@ -6,7 +6,7 @@ for ($i = 0; $i -lt $ar1.Count; $i++) {
     
     [string[]]$str = $ar1[$i] -split " "
     if ($hash.ContainsKey($str[-1])) { 
-       # Write-Host $hash.Values
+       # Write-Host $hash.Values ...
         $val = @(($str[2] + " " + $str[3]))
        $hash[$str[-1]] =  $hash[$str[-1]] + $val
     }
